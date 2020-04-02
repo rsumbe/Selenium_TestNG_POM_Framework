@@ -14,7 +14,7 @@ import com.utils.CommonMethods;
 public class LoginPage extends BasePage
 {
 
-	public  WebDriver driver;
+	public static WebDriver driver;
 	
 	public LoginPage(WebDriver driver)
 	{
@@ -24,18 +24,18 @@ public class LoginPage extends BasePage
 	
 	 //*********Web Elements by using Page Factory*********
     @FindBy(how = How.ID, using = "txtUsername")
-    public WebElement username;
+    public static WebElement username;
  
     @FindBy(how = How.ID, using = "txtPassword")
-    public WebElement password;
+    public static WebElement password;
  
     @FindBy(how = How.ID, using = "btnLogin")
-    public WebElement loginButton;
+    public static WebElement loginButton;
 	
 	
-//	WebElement user = driver.findElement(By.id("txtUsername"));
-//	WebElement pass = driver.findElement(By.id("txtPassword"));
-//	WebElement button =  driver.findElement(By.id("btnLogin"));
+//	WebElement usernameq = driver.findElement(By.id("txtUsername"));
+//	WebElement password = driver.findElement(By.id("txtPassword"));
+//	WebElement loginButton =  driver.findElement(By.id("btnLogin"));
 	
 	
 	public void EnterUsername(String un)

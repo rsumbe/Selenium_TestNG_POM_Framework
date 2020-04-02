@@ -27,17 +27,28 @@ public class Test_001 extends BaseTest {
 		login.ClickLoginBtn();
 
 		login.verifyTitle("OrangeHRM");
-		login.verifyTitle("OrangeHRM");
+		
+		logout.VerifyDashboardTxt("Dashboard123");
+		
 		logout.logoutFromApplication();
 
 	}
 
-	@Test(description = "test1 to verify page title")
-	public void test_login1() throws Exception {
+	@Test(description = "test1 to verify page title",enabled= false)
+	public void test_login1() throws Exception
+	{
 		login = page.GetInstance(LoginPage.class);
 		logout = page.GetInstance(LogOut.class);
 		login.EnterUsername("Admin");
-		login.verifyTitle("titlevalue");
+		login.EnterPassword("admin123");
+		login.ClickLoginBtn();
+
+		login.verifyTitle("OrangeHRM123");
+		
+		logout.VerifyDashboardTxt("Dashboard123");
+		
+		logout.logoutFromApplication();
+
 		//Assert.assertEquals(true, false);
 
 	}

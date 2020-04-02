@@ -7,10 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BasePage extends PageGenerator 
-{
+import com.utils.CommonMethods;
+
+public class BasePage extends PageGenerator {
+
 	public BasePage(WebDriver driver) {
 		super(driver);
+
 	}
 
 	WebDriverWait wait = new WebDriverWait(this.driver, 20);
@@ -50,5 +53,13 @@ public class BasePage extends PageGenerator
 			Thread.sleep(200);
 		}
 	}
+
+
+//	public WebElement FindElement(By by)
+//	{
+//		 WebElement ele =  driver.findElement(by);
+//		  CommonMethods.HighLightElement(ele);
+//		  return ele;
+//	}
 
 }

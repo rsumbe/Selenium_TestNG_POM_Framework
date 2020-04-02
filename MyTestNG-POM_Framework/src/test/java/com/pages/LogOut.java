@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.base.BasePage;
+import com.utils.CommonMethods;
 
 public class LogOut extends BasePage {
 
@@ -19,6 +20,10 @@ public class LogOut extends BasePage {
 	
 	@FindBy(id="welcome")
 	WebElement welcomeText;
+	
+	@FindBy(id="menu_dashboard_index")
+	static WebElement DashBoardText;
+	
 	
 	@FindBy(xpath="//a[text()='Logout']")
 	WebElement logoutButton;
@@ -35,5 +40,10 @@ public class LogOut extends BasePage {
 		driver.findElement(By.xpath("//a[text()='Logout']")).click();
 	}
 	
+	public void VerifyDashboardTxt(String expected)
+	{
+		//String actual = DashBoardText.getText();
+		CommonMethods.VerifyTxt(DashBoardText,expected);
+	}
 	
 }
