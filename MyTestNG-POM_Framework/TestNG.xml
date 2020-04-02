@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="my suite">
+	<listeners>
+		<listener class-name="com.listeners.CustomListener"></listener>
+		<!-- <listener class-name="com.Analyzer.MyTransformer"></listener> -->
+	</listeners>
+
+	<test name="my tests 1">
+		<!-- <parameter name="url" value="https://www.google.com"></parameter> -->
+		<!-- <parameter name="un" value="rsumbe"></parameter> -->
+		<!-- <parameter name="pwd" value="Rushi123"></parameter> -->
+		<classes>
+			<class name="com.testcases.Test_001"></class>
+		</classes>
+	</test>
+</suite>
