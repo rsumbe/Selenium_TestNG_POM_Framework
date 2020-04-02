@@ -18,10 +18,10 @@ public class ReadConfigProperty {
 //		  String filepath =   ReadConfigProperty.class.getClassLoader().getResource("\\config.properties").getPath();
 //		  System.out.println(filepath);
 //		  input =  ReadConfigProperty.class.getClassLoader().getResourceAsStream("\\config.properties");
-//		 
+//		 C:\\Users\\P10500071\\eclipse-workspace
 			FileInputStream fis = new FileInputStream(
-					"C:\\Users\\P10500071\\eclipse-workspace\\MyTestNGFramework\\src\\test\\resources\\config.properties");
-			System.out.println(input);
+					"C:\\Users\\P10500071\\git\\Selenium_TestNG_POM_Framework\\MyTestNG-POM_Framework\\src\\test\\resources\\config.properties");
+		
 			prop = new Properties();
 			prop.load(fis);
 		} catch (IOException e) {

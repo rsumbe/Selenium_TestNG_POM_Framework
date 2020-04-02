@@ -8,6 +8,7 @@
     <classes>
       <class name="com.testcases.Test_001">
         <methods>
+          <include name="test_login"/>
           <include name="beforeMethod"/>
           <include name="test_login1"/>
           <include name="setUp"/>

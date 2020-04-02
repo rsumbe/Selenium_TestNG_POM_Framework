@@ -43,9 +43,9 @@ public class BaseTest
 
 		if ("chrome".equalsIgnoreCase(file.getValue("browser"))) {
 			// System.setProperty("webdriver.chrome.driver",StartWebDriver.class.getClassLoader().getResource("resources/chromedriver.exe").getPath());
-
+			//C:\Users\P10500071\git\Selenium_TestNG_POM_Framework\MyTestNG-POM_Framework\src\test\resources
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\P10500071\\eclipse-workspace\\MyTestNGFramework\\src\\test\\resources\\chromedriver.exe");
+					"C:\\Users\\P10500071\\git\\Selenium_TestNG_POM_Framework\\MyTestNG-POM_Framework\\src\\test\\resources\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if ("firefox".equalsIgnoreCase(file.getValue("browser"))) {
 			driver = new FirefoxDriver();
