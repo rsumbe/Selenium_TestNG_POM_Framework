@@ -8,7 +8,8 @@ import org.testng.Assert;
 import com.base.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class CommonMethods {
+public class CommonMethods 
+{
 	public static WebDriver driver;
 
 	public CommonMethods(WebDriver driver) {

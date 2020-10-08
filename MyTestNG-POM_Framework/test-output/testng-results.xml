@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="my suite" duration-ms="40279" started-at="2020-04-02T19:15:01 IST" finished-at="2020-04-02T19:15:41 IST">
+  <suite name="Default suite" duration-ms="44718" started-at="2020-04-16T22:23:49 IST" finished-at="2020-04-16T22:24:34 IST">
     <groups>
     </groups>
-    <test name="my tests 1" duration-ms="40279" started-at="2020-04-02T19:15:01 IST" finished-at="2020-04-02T19:15:41 IST">
+    <test name="Default test" duration-ms="44718" started-at="2020-04-16T22:23:49 IST" finished-at="2020-04-16T22:24:34 IST">
       <class name="com.testcases.Test_001">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testcases.Test_001@3a5ed7a6]" name="setUp" is-config="true" duration-ms="34312" started-at="2020-04-02T19:14:26 IST" finished-at="2020-04-02T19:15:01 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testcases.Test_001@7791a895]" name="setUp" is-config="true" duration-ms="17269" started-at="2020-04-16T22:23:32 IST" finished-at="2020-04-16T22:23:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.testcases.Test_001@3a5ed7a6]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-04-02T19:15:01 IST" finished-at="2020-04-02T19:15:01 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.testcases.Test_001@7791a895]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-04-16T22:23:49 IST" finished-at="2020-04-16T22:23:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testcases.Test_001@3a5ed7a6]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2020-04-02T19:15:01 IST" finished-at="2020-04-02T19:15:01 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testcases.Test_001@7791a895]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2020-04-16T22:23:49 IST" finished-at="2020-04-16T22:23:49 IST">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test_login()[pri:0, instance:com.testcases.Test_001@3a5ed7a6]" name="test_login" duration-ms="40242" started-at="2020-04-02T19:15:01 IST" description="test to verify page title" finished-at="2020-04-02T19:15:41 IST">
+        <test-method status="FAIL" signature="test_login()[pri:0, instance:com.testcases.Test_001@7791a895]" name="test_login" duration-ms="44621" started-at="2020-04-16T22:23:49 IST" description="test to verify page title" finished-at="2020-04-16T22:24:34 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//a[text()='Logout']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PDCLT012XLSLQ2', ip: '10.208.39.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()='Logout']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PDCLT012XLSLQ2', ip: '10.208.39.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.pages.LogOut.logoutFromApplication(LogOut.java:40)
+at com.testcases.Test_001.test_login(Test_001.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_login -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.testcases.Test_001@3a5ed7a6]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-04-02T19:15:41 IST" finished-at="2020-04-02T19:15:41 IST">
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.testcases.Test_001@7791a895]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-04-16T22:24:34 IST" finished-at="2020-04-16T22:24:34 IST">
           <params>
             <param index="0">
               <value>
@@ -41,15 +92,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.testcases.Test_001@3a5ed7a6]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-04-02T19:15:41 IST" finished-at="2020-04-02T19:15:41 IST">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.testcases.Test_001@7791a895]" name="afterClass" is-config="true" duration-ms="2" started-at="2020-04-16T22:24:34 IST" finished-at="2020-04-16T22:24:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.Test_001@3a5ed7a6]" name="tearDown" is-config="true" duration-ms="1361" started-at="2020-04-02T19:15:41 IST" finished-at="2020-04-02T19:15:42 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.Test_001@7791a895]" name="tearDown" is-config="true" duration-ms="2494" started-at="2020-04-16T22:24:34 IST" finished-at="2020-04-16T22:24:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testcases.Test_001 -->
-    </test> <!-- my tests 1 -->
-  </suite> <!-- my suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

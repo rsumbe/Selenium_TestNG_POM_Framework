@@ -7,7 +7,6 @@
         <methods>
           <include name="test_login"/>
           <include name="beforeMethod"/>
-          <include name="test_login1"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>

@@ -36,9 +36,9 @@ public class LogOut extends BasePage {
 		} catch (InterruptedException e) {
 			
 		}
-		//logoutButton.click();
-		driver.findElement(By.xpath("//a[text()='Logout']")).click();
+		//logoutButton.click();driver.findElement(By.xpath("//a[text()='Logout']")).click();
 	}
+		
 	
 	public void VerifyDashboardTxt(String expected)
 	{
